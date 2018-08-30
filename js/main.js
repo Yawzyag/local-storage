@@ -54,6 +54,8 @@ function carouselLocalStorage() {
   carouselToDOM();
 }
 
+//mostrar imagenes guardadas
+
 function carouselToDOM() {
   if (localStorage.getItem("carrousel-collection")) {
     let collections = JSON.parse(localStorage.getItem("carrousel-collection"));
@@ -82,6 +84,7 @@ function carouselToDOM() {
   setTimeout(cambiarDeGaleria(), 500);
 }
 
+//borar local storage
 function cleanLocalStorage() {
   localStorage.clear();
   carouselToDOM();
@@ -97,13 +100,14 @@ function cambiarDeGaleria() {
   });
 }
 
+//seleccionar imagen de galeria
+
 function targetImg(e) {
   paintImage.src = e.target.src;
 }
 
+//borrar imagen
 function hola(e) {
-  // console.log(e.target);
-  // console.log(imageGalerry);
   borrar(e.target);
 }
 
