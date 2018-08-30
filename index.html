@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cat</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="fixed-action-btn">
+            <a id="borrarLocalStorage" class="btn-floating right btn-large waves-effect waves-light red"><i class="material-icons">close</i></a>
+        </div>
+
+        <div class="contain-img">
+            <img id="image-random" class="responsive-img z-depth-3" src="" alt="random">
+        </div>
+
+        <div class="row">
+            <a id="newImage" class="col s12 m4 waves-effect waves-light btn-small ">Nueva Imagen</a>
+            <a id="img-local-storage" class="col s12 m4 indigo darken-4 right waves-effect waves-light btn-small ">Guardar
+                en galeria
+            </a>
+        </div>
+
+        <div class="row grey lighten-3  z-depth-4" id="carousel-img">
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+
+</body>
+
+</html>

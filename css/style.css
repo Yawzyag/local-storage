@@ -1,0 +1,26 @@
+#image-random {
+  max-height: 60vh;
+  max-width: 80vw;
+  margin: 1rem auto;
+  display: block;
+}
+
+body {
+  max-width: 100vw;
+}
+
+.img-height {
+  height: 40vw !important;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+
+.img-height:hover {
+  opacity: 0.8;
+}
+
+p,
+h5,
+h6 {
+  text-transform: capitalize;
+}
